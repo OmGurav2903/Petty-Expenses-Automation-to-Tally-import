@@ -45,12 +45,9 @@ Audit log.gs           - Audit logging
 Notification.gs        - Transactional email builders
 Email template.gs      - Shared branded email template
 Config.gs              - Application configuration
-Logos.gs               - Branding/logo assets
 Sheet utils.gs         - Shared spreadsheet helper functions
 Triggers.gs            - Scheduled/automated triggers
 Main.GS                - Main entry point and routing
-CHANGES.md             - Version history and change log
-tools/                 - Test harness, hardening checks, and surface analysis scripts
 
 Requirements
 ------------
@@ -58,22 +55,6 @@ Requirements
 - A Google account with access to Google Sheets and Apps Script.
 - clasp (https://github.com/google/clasp) (optional) if you want to push/pull this
   code to an Apps Script project from the command line instead of the web editor.
-
-Development tools
------------------
-
-The tools/ directory contains Node.js and Python scripts used during development:
-
-- test_v5.js, test_ledger_suggest.js, test_ledger_suggest_client.js,
-  client_admin_test.js — test suites.
-- harden.js — security/hardening checks, with output captured in
-  harden_report.json.
-- surface.js — API surface analysis, output in surface.json / surface_rest.txt.
-- undef_check.js, protocol_checks.py, final_surface_check.js — static checks.
-- build_seed.py — builds ledger seed data from historical records.
-- run_all_checks.sh — runs the full check suite.
-
-See tools/README.md for details on running these.
 
 Notes
 -----
